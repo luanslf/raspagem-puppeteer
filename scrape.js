@@ -15,18 +15,6 @@ const scrape = async () => {
                 district['district'] = trChildren[0].innerText;
                 district['confirmed'] = trChildren[1].innerText;
                 district['recovered'] = trChildren[2].innerText;
-                /* for (i = 0; i < trChildren.length; i++) {
-                    district['district'] = trChildren[0]; */
-
-                    /* district.push(trChildren[i].innerText); */
-                    /* if (i === 0) {
-                        district['district'] = trChildren[i]
-                    } else if (i === 1) {
-
-                    } else {
-
-                    } */
-                //}
                 districts.push(district);
             });
         return districts;
